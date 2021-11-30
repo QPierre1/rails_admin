@@ -78,6 +78,7 @@ module RailsAdmin
         options[:label] = field.label
         options[:operator] = filter_hash['o'] || field.default_filter_operator
         options[:required] = field.required
+        options[:separator] = filter_hash['s']
         options
       end if ordered_filters
     end
